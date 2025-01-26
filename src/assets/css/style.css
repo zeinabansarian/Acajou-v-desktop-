@@ -1,0 +1,1669 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("../fonts/yekanBakh/YekanBakh-Medium.eot");
+  src: url("../fonts/yekanBakh/YekanBakh-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/yekanBakh/YekanBakh-Medium.woff") format("woff"), url("../fonts/yekanBakh/YekanBakh-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("../fonts/yekanBakh/YekanBakh-Regular.eot");
+  src: url("../fonts/yekanBakh/YekanBakh-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/yekanBakh/YekanBakh-Regular.woff") format("woff"), url("../fonts/yekanBakh/YekanBakh-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Now Text";
+  src: url("../fonts/HelveticaNowText/HelveticaNowText-Black.eot");
+  src: url("../fonts/HelveticaNowText/HelveticaNowText-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowText/HelveticaNowText-Black.woff2") format("woff2"), url("../fonts/HelveticaNowText/HelveticaNowText-Black.woff") format("woff"), url("../fonts/HelveticaNowText/HelveticaNowText-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Text";
+  src: url("../fonts/HelveticaNowText/HelveticaNowText-Bold.eot");
+  src: url("../fonts/HelveticaNowText/HelveticaNowText-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowText/HelveticaNowText-Bold.woff2") format("woff2"), url("../fonts/HelveticaNowText/HelveticaNowText-Bold.woff") format("woff"), url("../fonts/HelveticaNowText/HelveticaNowText-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Text";
+  src: url("../fonts/HelveticaNowText/HelveticaNowText-Thin.eot");
+  src: url("../fonts/HelveticaNowText/HelveticaNowText-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowText/HelveticaNowText-Thin.woff2") format("woff2"), url("../fonts/HelveticaNowText/HelveticaNowText-Thin.woff") format("woff"), url("../fonts/HelveticaNowText/HelveticaNowText-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Text";
+  src: url("../fonts/HelveticaNowText/HelveticaNowText-ExtraLight.eot");
+  src: url("../fonts/HelveticaNowText/HelveticaNowText-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowText/HelveticaNowText-ExtraLight.woff2") format("woff2"), url("../fonts/HelveticaNowText/HelveticaNowText-ExtraLight.woff") format("woff"), url("../fonts/HelveticaNowText/HelveticaNowText-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Text";
+  src: url("../fonts/HelveticaNowText/HelveticaNowText-Light.eot");
+  src: url("../fonts/HelveticaNowText/HelveticaNowText-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowText/HelveticaNowText-Light.woff2") format("woff2"), url("../fonts/HelveticaNowText/HelveticaNowText-Light.woff") format("woff"), url("../fonts/HelveticaNowText/HelveticaNowText-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Text";
+  src: url("../fonts/HelveticaNowText/HelveticaNowText-ExtraBold.eot");
+  src: url("../fonts/HelveticaNowText/HelveticaNowText-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowText/HelveticaNowText-ExtraBold.woff2") format("woff2"), url("../fonts/HelveticaNowText/HelveticaNowText-ExtraBold.woff") format("woff"), url("../fonts/HelveticaNowText/HelveticaNowText-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Text";
+  src: url("../fonts/HelveticaNowText/HelveticaNowText-Regular.eot");
+  src: url("../fonts/HelveticaNowText/HelveticaNowText-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowText/HelveticaNowText-Regular.woff2") format("woff2"), url("../fonts/HelveticaNowText/HelveticaNowText-Regular.woff") format("woff"), url("../fonts/HelveticaNowText/HelveticaNowText-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Text";
+  src: url("../fonts/HelveticaNowText/HelveticaNowText-Medium.eot");
+  src: url("../fonts/HelveticaNowText/HelveticaNowText-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowText/HelveticaNowText-Medium.woff2") format("woff2"), url("../fonts/HelveticaNowText/HelveticaNowText-Medium.woff") format("woff"), url("../fonts/HelveticaNowText/HelveticaNowText-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ThinIta.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ThinIta.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ThinIta.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ThinIta.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ThinIta.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Light.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Light.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Light.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-BoldIta.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-BoldIta.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-BoldIta.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-BoldIta.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-BoldIta.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-RegIta.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-RegIta.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-RegIta.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-RegIta.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-RegIta.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtLtIta.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtLtIta.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtLtIta.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtLtIta.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtLtIta.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-MedIta.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-MedIta.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-MedIta.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-MedIta.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-MedIta.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtLt.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtLt.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtLt.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtLt.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtLt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtBlk.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtBlk.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtBlk.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtBlk.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtBlk.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Bold.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Bold.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Bold.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtBdIta.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtBdIta.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtBdIta.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtBdIta.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtBdIta.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Regular.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Regular.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Regular.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtBlkIta.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtBlkIta.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtBlkIta.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtBlkIta.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtBlkIta.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Thin.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Thin.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Thin.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-LightIta.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-LightIta.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-LightIta.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-LightIta.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-LightIta.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtraBold.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtraBold.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtraBold.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Medium.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Medium.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Medium.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-HairlineI.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-HairlineI.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-HairlineI.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-HairlineI.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-HairlineI.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-BlackIta.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-BlackIta.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-BlackIta.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-BlackIta.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-BlackIta.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Black.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Black.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Black.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Hairline.eot");
+  src: url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Hairline.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Hairline.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Hairline.woff") format("woff"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Hairline.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+p {
+  direction: rtl;
+}
+
+.circle {
+  --cursor-size: 152px;
+  position: fixed;
+  width: var(--cursor-size);
+  height: var(--cursor-size);
+  border: 1px solid rgba(255, 255, 255, 0.8431372549);
+  border-radius: 100%;
+  top: calc(-1 * var(--cursor-size) / 2);
+  left: calc(-1 * var(--cursor-size) / 2);
+  pointer-events: none;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.leftScroll {
+  transform: translateX(-15vw);
+}
+
+.rightScroll {
+  transform: translateX(15vw);
+}
+
+.productList {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+  cursor: none;
+}
+.productList header {
+  padding-left: 3.125vw !important;
+  justify-content: flex-start !important;
+}
+.productList header .bars {
+  right: 6.125vw !important;
+}
+.productList header .Menu {
+  right: 0;
+  cursor: auto;
+}
+.productList .backgroundImg {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  filter: brightness(0.8);
+  position: relative;
+}
+.productList .backgroundImg img {
+  width: 100%;
+  height: 100vh;
+}
+.productList .backImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: 0;
+  right: 0;
+}
+.productList .listcat {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  bottom: 0;
+}
+.productList .listcat .listItem:first-child {
+  border: none;
+}
+.productList .listcat .listItem {
+  border-left: 1px solid rgba(255, 255, 255, 0.5019607843);
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.productList .listcat .listItem a {
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  cursor: none;
+}
+.productList .listcat .listItem .title {
+  width: 100%;
+}
+.productList .listcat .listItem h1, .productList .listcat .listItem h3 {
+  font-family: "Helvetica Now Text";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 47.04px;
+  color: white;
+  margin: 0 0 12px 30px;
+}
+.productList .listcat .listItem span {
+  width: 100%;
+  background-color: #c2b59b;
+  display: block;
+  height: 0;
+  transition: 0.6s;
+}
+.productList .listcat .listItem:hover span {
+  transition: 0.6s;
+  height: 23px;
+}
+.productList .listcat img {
+  display: none;
+}
+.productList .activeImg {
+  z-index: 100;
+  visibility: visible;
+  transition-delay: 0;
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.aboutUs {
+  overflow: hidden;
+}
+.aboutUs .section1 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutUs .section1 img {
+  width: 100vw;
+  height: 100%;
+}
+.aboutUs .section1 .title {
+  position: absolute;
+}
+.aboutUs .section1 .title h1 {
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+  line-height: 107.53px;
+  font-size: 67px;
+  color: white;
+}
+.aboutUs .section2 {
+  padding: 117px 9.938vw 145px 9.938vw;
+  display: flex;
+  column-gap: 24px;
+}
+.aboutUs .section2 .leftCol {
+  width: 48%;
+}
+.aboutUs .section2 .leftCol img {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+}
+.aboutUs .section2 .rightCol {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.aboutUs .section2 .rightCol h2 {
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 54.57px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.aboutUs .section2 .rightCol p {
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27.9px;
+  margin-bottom: 44px;
+  text-align: center;
+  direction: rtl;
+}
+.aboutUs .section2 .rightCol img {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+}
+.aboutUs .section3 svg {
+  width: 55.75vw;
+  height: fit-content;
+}
+.aboutUs .section3,
+.aboutUs .section5 {
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+  column-gap: 26px;
+}
+.aboutUs .section3 h3,
+.aboutUs .section5 h3 {
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+  font-size: 50px;
+  white-space: nowrap;
+  margin-left: 49px;
+}
+.aboutUs .section4 {
+  padding: 116px 9.938vw 165px 9.938vw;
+}
+.aboutUs .section4 video {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+}
+.aboutUs .section5 svg {
+  height: fit-content;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+}
+.aboutUs .section6 {
+  margin: 119px 0 109px 0;
+}
+.aboutUs .section6 .swiper-slide {
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  height: auto;
+  justify-content: center;
+  transition: 0.3s;
+}
+.aboutUs .section6 .swiper-slide img {
+  width: 120px;
+}
+.aboutUs .section6 .swiper-slide:hover {
+  transition: 0.3s;
+  opacity: 1;
+}
+
+footer {
+  background-color: #c2b59b;
+  padding: 46px 12.75vw 0 12.75vw;
+  position: relative;
+  z-index: 1000;
+}
+footer .footerContainer {
+  padding: 51px 0 91px;
+  display: flex;
+  justify-content: center;
+  column-gap: 7.5vw;
+  border-top: 1px solid #828282;
+}
+footer .footerContainer .footerItem h3 {
+  text-align: center;
+  margin-bottom: 18px;
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29.4px;
+}
+footer .footerContainer .footerItem ul li {
+  text-align: center;
+  margin-bottom: 17px;
+  color: #424242;
+  font-family: "Helvetica Now Display";
+}
+footer .footerContainer .footerItem ul li a {
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20.58px;
+  text-decoration: none;
+  color: #424242;
+}
+footer .footerContainer .footerItem ul li h6 {
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23.87px;
+  color: #424242;
+}
+footer .footerContainer .footerItem ul li p, footer .footerContainer .footerItem ul li span {
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23.87px;
+  color: #424242;
+  direction: ltr;
+  display: inline-block;
+}
+footer .copyRight {
+  display: flex;
+  justify-content: center;
+  padding: 31px 0;
+  align-items: center;
+  border-top: 1px solid #828282;
+}
+footer .copyRight a {
+  font-family: "IRANYekan";
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 17.27px;
+  text-decoration: none;
+  color: #424242;
+  margin-left: 10px;
+}
+
+.contactUs {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: end;
+}
+.contactUs .contactContainer {
+  display: flex;
+  margin-top: 13px;
+  width: 100%;
+  height: 100%;
+  align-items: end;
+}
+.contactUs .leftCol {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 66%;
+  background-color: #c2b59b;
+  padding: 15px 2.688vw 50px 2.688vw;
+}
+.contactUs .leftCol h1 {
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 61.74px;
+}
+.contactUs .leftCol ul {
+  margin-bottom: 45px;
+}
+.contactUs .leftCol ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+.contactUs .leftCol ul li h2,
+.contactUs .leftCol ul li a,
+.contactUs .leftCol ul li h4,
+.contactUs .leftCol ul li h5 {
+  color: black;
+  text-decoration: none;
+  font-family: "Helvetica Now Text";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 33.08px;
+  text-transform: uppercase;
+}
+.contactUs .leftCol ul li h4 {
+  font-weight: 500;
+}
+.contactUs .rightCol {
+  display: flex;
+  height: 84%;
+  width: 53%;
+}
+.contactUs .rightCol img {
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: fill-available;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+}
+
+.projectList {
+  margin-top: 205px;
+}
+.projectList .section2 .sliderContainer .swiper-slide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  filter: brightness(0.3);
+  transition: 0.6s;
+}
+.projectList .section2 .sliderContainer .swiper-slide img {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+}
+.projectList .section2 .sliderContainer .swiper-slide .txtWrapper {
+  position: absolute;
+  bottom: 27px;
+  text-align: center;
+  z-index: 10;
+}
+.projectList .section2 .sliderContainer .swiper-slide .txtWrapper h2 {
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 36.75px;
+  color: white;
+  margin-bottom: 23px;
+}
+.projectList .section2 .sliderContainer .swiper-slide .txtWrapper a {
+  text-decoration: none;
+  color: white;
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20.15px;
+  padding: 11px 40px;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+.projectList .section2 .sliderContainer .swiper-slide::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 137px;
+  background: rgb(249, 249, 249);
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(249, 249, 249, 0) 13%, rgba(0, 0, 0, 0.47) 100%);
+}
+.projectList .section2 .sliderContainer .swiper-slide-active {
+  filter: brightness(1);
+  transition: 0.6s;
+}
+.projectList .section3 {
+  margin-top: 99px;
+}
+.projectList .section3 .title {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  column-gap: 26px;
+}
+.projectList .section3 .title h1 {
+  text-transform: uppercase;
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+  font-size: 50px;
+}
+.projectList .section3 .title svg {
+  width: 72.75vw;
+}
+.projectList .section3 .projectItemWrapper {
+  padding: 0 10.313vw;
+}
+.projectList .section3 .projectItemContainer {
+  margin-top: 62px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 70px;
+  justify-content: center;
+  row-gap: 50px;
+}
+.projectList .section3 .projectItemContainer .projectItem {
+  text-align: center;
+  width: 27.786%;
+}
+.projectList .section3 .projectItemContainer .projectItem img {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+}
+.projectList .section3 .projectItemContainer .projectItem h3 {
+  margin: 11px 0;
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26.46px;
+}
+.projectList .section3 .projectItemContainer .projectItem a {
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  font-size: 15.5px;
+  line-height: 15.5px;
+  text-decoration: none;
+  color: black;
+  padding: 5px 30px;
+  border: 1px solid black;
+  border-radius: 30px;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+.projectList .section3 .projectItem:nth-child(6) ~ .projectItem {
+  display: none;
+}
+.projectList .section3 .loadMore {
+  margin: 70px 0 90px 0;
+  text-align: center;
+}
+.projectList .section3 .loadMore button {
+  cursor: pointer;
+  padding: 10px 40px;
+  border: 1px solid #aeaeae;
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  background-color: transparent;
+  font-size: 13px;
+  color: #aeaeae;
+  border-radius: 30px;
+}
+
+.productShow1 .section2 {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #181818;
+}
+.productShow1 .section2 .leftcol {
+  width: 50%;
+  overflow: hidden;
+}
+.productShow1 .section2 .leftcol img {
+  height: 100vh;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+  opacity: 0;
+}
+.productShow1 .section2 .rightCol {
+  display: flex;
+  width: 50%;
+}
+.productShow1 .section2 .rightCol img {
+  opacity: 0;
+}
+.productShow1 .section2 .rightCol .titleCol {
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productShow1 .section2 .rightCol .titleCol .imgContainer {
+  overflow: hidden;
+  text-align: center;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+}
+.productShow1 .section2 .rightCol .titleCol .imgContainer img {
+  height: 100vh;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+}
+.productShow1 .section2 .rightCol .titleCol h1 {
+  position: absolute;
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+  font-size: 75px;
+  word-break: break-word;
+  text-align: center;
+  opacity: 0;
+  line-height: 110.25px;
+}
+.productShow1 .section2 .rightCol .imgCol {
+  width: 50%;
+  overflow: hidden;
+}
+.productShow1 .section2 .rightCol .imgCol img {
+  height: 100vh;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+}
+.productShow1 .section3 {
+  padding: 59px 3.125vw 38px;
+}
+.productShow1 .section3 p {
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  line-height: 27.9px;
+  font-size: 18px;
+  text-align: right;
+}
+.productShow1 .section3 ul {
+  margin-top: 23px;
+  text-align: right;
+}
+.productShow1 .section3 ul li {
+  display: flex;
+  justify-content: right;
+  direction: rtl;
+  margin-bottom: 28px;
+}
+.productShow1 .section3 ul li h4,
+.productShow1 .section3 ul li span {
+  font-family: "Yekan Bakh";
+  font-weight: 400;
+  font-size: 16px;
+}
+.productShow1 .section4 {
+  padding: 76px 15.563vw 69px 12.438vw;
+  background-color: #181818;
+}
+.productShow1 .section4 .topSec img {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+}
+.productShow1 .section4 .btmSec {
+  margin-top: 61px;
+  align-items: center;
+  display: flex;
+  column-gap: 6.063vw;
+}
+.productShow1 .section4 .btmSec .imgContain {
+  width: 33.25vw;
+}
+.productShow1 .section4 .btmSec img {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+}
+.productShow1 .section4 .btmSec .txtContain {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productShow1 .section4 .btmSec .txtContain h5 {
+  font-family: "Helvetica Now Display";
+  text-transform: uppercase;
+  max-width: 362px;
+  width: max-content;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 61.74px;
+  text-align: center;
+  color: white;
+  margin-bottom: 25px;
+}
+.productShow1 .section4 .btmSec .txtContain p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29.4px;
+  text-align: center;
+  color: white;
+}
+.productShow1 .section5 {
+  position: relative;
+  margin-bottom: 162px;
+}
+.productShow1 .section5 .swiper-slide img {
+  width: 100%;
+}
+.productShow1 .section5 .btns .nextBtn,
+.productShow1 .section5 .btns .prevBtn {
+  position: absolute;
+  padding: 24px 30px;
+  background-color: rgba(1, 1, 1, 0.3019607843);
+  top: 45%;
+  z-index: 10;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: 0.5s;
+}
+.productShow1 .section5 .btns .nextBtn {
+  right: 0;
+  transform: translateX(100%);
+}
+.productShow1 .section5 .btns .prevBtn {
+  left: 0;
+  transform: translateX(-100%);
+}
+.productShow1 .section5 .btns .prevBtn.swiper-button-disabled {
+  transform: translateX(-100%) !important;
+  opacity: 0;
+  transition: 0.5s;
+}
+.productShow1 .section5 .btns .nextBtn.swiper-button-disabled {
+  transform: translateX(100%) !important;
+  opacity: 0;
+  transition: 0.5s;
+}
+.productShow1 .section5 .proSlider:hover .nextBtn {
+  transform: translateX(0);
+}
+.productShow1 .section5 .proSlider:hover .prevBtn {
+  transform: translateX(0);
+}
+.productShow1 .section5 .swiper-pagination {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  bottom: -65px;
+  row-gap: 20px;
+  padding: 0 20px;
+  left: 0;
+  right: 0;
+}
+.productShow1 .section5 .swiper-pagination-bullet {
+  background-color: #424242;
+  transition: 0.3s;
+  opacity: 1;
+}
+.productShow1 .section5 .swiper-pagination-bullet-active {
+  background-color: #c2b59b;
+  transition: 0.3s;
+}
+.productShow1 .section6 {
+  margin-bottom: 42px;
+}
+.productShow1 .section6 h2 {
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 61.74px;
+  margin: 0 0 28px 3.125vw;
+}
+
+.loaded {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.projectShow2 .section2 .videoWrapper {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+.projectShow2 .section2 .videoWrapper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 14.8vh;
+  background: rgb(249, 249, 249);
+  background: linear-gradient(180deg, rgba(249, 249, 249, 0) 13%, rgba(0, 0, 0, 0.47) 100%);
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.projectShow2 .section2 video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+}
+.projectShow2 .section2 .txtWrapp {
+  position: absolute;
+  bottom: 17px;
+  right: 3.125vw;
+  z-index: 5;
+}
+.projectShow2 .section2 .txtWrapp h1 {
+  transition: 1s;
+  transform: rotate3d(-1, 0, 0, 70deg) translateY(100%);
+  opacity: 0;
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+  font-size: 42px;
+  color: white;
+  line-height: 61.74px;
+  margin-bottom: 57px;
+  text-align: right;
+}
+.projectShow2 .section2 .txtWrapp ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 3.75vw;
+}
+.projectShow2 .section2 .txtWrapp ul li {
+  display: flex;
+  opacity: 0;
+  transform: translateY(80%);
+  transition: 1s;
+  direction: rtl;
+  align-items: end;
+  column-gap: 6px;
+}
+.projectShow2 .section2 .txtWrapp ul li h3,
+.projectShow2 .section2 .txtWrapp ul li p {
+  font-family: "Yekan Bakh";
+  font-weight: 500;
+  font-size: 24px;
+  color: #aeaeae;
+}
+.projectShow2 .section2 .txtWrapp ul li p {
+  color: #ffffff;
+}
+.projectShow2 .section2 .loadedData h1 {
+  transition: 1.5s;
+  transform: rotate3d(0, 0, 0, 0deg) translateY(0);
+  opacity: 1;
+}
+.projectShow2 .section2 .loadedData li {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: 1.5s;
+}
+.projectShow2 .section3 h2 {
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 61.74px;
+  padding: 80px 0 34px 3.188vw;
+}
+.projectShow2 .section3 .sliderSection .sliderProject2 .swiper-slide img {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+}
+.projectShow2 .section3 .sliderSection .sliderProject2 .btns .nextBtn,
+.projectShow2 .section3 .sliderSection .sliderProject2 .btns .prevBtn {
+  position: absolute;
+  padding: 24px 30px;
+  background-color: rgba(1, 1, 1, 0.3019607843);
+  top: 45%;
+  z-index: 10;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: 0.5s;
+}
+.projectShow2 .section3 .sliderSection .sliderProject2 .btns .nextBtn {
+  right: 0;
+}
+.projectShow2 .section3 .sliderSection .sliderProject2 .btns .prevBtn {
+  left: 0;
+}
+.projectShow2 .section3 .sliderSection .sliderProject2 .btns .prevBtn.swiper-button-disabled {
+  opacity: 0;
+  transition: 0.5s;
+}
+.projectShow2 .section3 .sliderSection .sliderProject2 .btns .nextBtn.swiper-button-disabled {
+  opacity: 0;
+  transition: 0.5s;
+}
+.projectShow2 .section4 {
+  background-color: #8d9a8c;
+  padding: 163px 9.125vw;
+  margin: 80px 0;
+}
+.projectShow2 .section4 p {
+  direction: ltr;
+  display: block;
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44.1px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20%);
+}
+
+.baguetteBox-button#next-button {
+  right: 0;
+  background: rgba(1, 1, 1, 0.8);
+  border-radius: 0;
+  /* padding: 20px 40px; */
+  width: 104px;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.baguetteBox-button#next-button svg {
+  position: relative;
+  left: unset;
+  right: unset;
+}
+
+.baguetteBox-button#previous-button {
+  left: 0;
+  background: rgba(1, 1, 1, 0.8);
+  border-radius: 0;
+  /* padding: 20px 40px; */
+  width: 104px;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.baguetteBox-button#previous-button svg {
+  position: relative;
+  left: unset;
+  right: unset;
+}
+
+.baguetteBox-button#close-button {
+  background-color: transparent;
+}
+.baguetteBox-button#close-button g {
+  stroke: white;
+}
+
+.home .section2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1001;
+}
+.home .section2 video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+  filter: brightness(0.7);
+}
+.home .section2 .txtWrapper {
+  position: absolute;
+}
+.home .section2 .txtWrapper h1 {
+  font-family: "Helvetica Now Text";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 64.2px;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+}
+.home .section3 {
+  background-color: #c2b59b;
+  display: flex;
+  position: relative;
+  z-index: 1001;
+}
+.home .section3 .dynamicSection {
+  padding: 115px 9.125vw;
+}
+.home .section3 .txtSection {
+  padding: 101px 6vw 102px 11.25vw;
+}
+.home .section3 .txtSection p {
+  font-family: "Helvetica Now Display";
+  font-style: italic;
+  color: white;
+  line-height: 58.8px;
+  font-weight: 700;
+  text-align: left;
+  font-size: 42px;
+}
+.home .section4 h2 {
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+  font-size: 35px;
+  margin: 56px 0 25px 3.125vw;
+}
+.home .section5 {
+  position: relative;
+  overflow: hidden;
+  height: fit-content;
+  display: flex;
+  z-index: 1001;
+  margin-top: 62px;
+}
+.home .section5 > img {
+  width: 100%;
+  height: 99vh;
+}
+.home .section5 .overTxt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5.313vw;
+  justify-content: center;
+  background-color: #090909;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20vw;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: fill-available;
+}
+.home .section5 .overTxt h4 {
+  font-family: "Helvetica Now Text";
+  font-weight: 400;
+  font-size: 42px;
+  color: white;
+  line-height: 61.74px;
+  margin-bottom: 50px;
+}
+.home .section5 .overTxt .logo {
+  margin-top: 129px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 27px;
+}
+.home .section6 {
+  padding: 54px 3.125vw 62px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1001;
+}
+.home .section6 img {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+}
+.home .section6 .imgContainer {
+  overflow: hidden;
+}
+.home .section6 .leftSec,
+.home .section6 .rightSec {
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+  row-gap: 17px;
+}
+.home .section6 .middleSec {
+  width: 33%;
+  padding: 0 4.75vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home .section6 .middleSec span {
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26.46px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 7px;
+}
+.home .section6 .middleSec h5 {
+  font-family: "Helvetica Now Display";
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 49.98px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 26px;
+}
+.home .section6 .middleSec h5::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 47%;
+  right: 25%;
+  bottom: -12px;
+  background-color: black;
+}
+.home .section6 .middleSec p {
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26.46px;
+  text-align: center;
+  direction: ltr;
+}
+.home .section7 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+}
+.home .section7 img {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+}
+.home .section7 .txtWrapper {
+  position: absolute;
+  padding: 0 20vw;
+}
+.home .section7 .txtWrapper p {
+  font-family: "Helvetica Now Text";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  direction: ltr;
+  color: white;
+}
+.home .section8 {
+  background-color: black;
+  padding: 120px 0;
+  position: relative;
+  z-index: 1001;
+}
+.home .section8 video {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+}
+.home .section9 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+}
+.home .section9 img {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+}
+.home .section9 .txt {
+  position: absolute;
+  left: 3.125vw;
+}
+.home .section9 .txt p {
+  direction: ltr;
+  color: white;
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 66.15px;
+}
+.home .section10 {
+  background-color: black;
+  padding: 82px 3.125vw;
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 22px;
+  position: relative;
+  z-index: 1001;
+}
+.home .section10 p {
+  font-family: "Helvetica Now Text";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26.46px;
+  color: white;
+  direction: ltr;
+}
+.home .section10 a {
+  font-family: "Helvetica Now Text";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26.52px;
+  color: white;
+  text-decoration: none;
+  direction: ltr;
+  white-space: nowrap;
+  padding: 9px 35px;
+  border: 1px solid white;
+  border-radius: 25px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999900000000100000;
+  align-items: center;
+  transition: 0.4s ease-in-out;
+  padding: 34px 0;
+}
+header .bars {
+  position: absolute;
+  right: 3.125vw;
+  cursor: pointer;
+  z-index: 100;
+}
+header .bars span {
+  width: 30px;
+  height: 2px;
+  transition: 0.3s ease-in-out;
+  background-color: white;
+  display: block;
+}
+header .bars span:nth-child(2),
+header .bars span:nth-child(3) {
+  margin-top: 11px;
+}
+header .openMenu {
+  position: absolute;
+  width: 55vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 0;
+  height: 100vh;
+  background: #c2b59b;
+  top: 0;
+  padding: 0 2.5vw;
+}
+header .openMenu .removeImg {
+  visibility: hidden;
+  transition: 1;
+  transition-delay: 1;
+}
+header .openMenu .addImg {
+  visibility: visible;
+  transition-delay: 1;
+  transition: 1;
+}
+header .openMenu .imgSection {
+  width: 45%;
+  overflow: hidden;
+}
+header .openMenu .imgSection .img_box {
+  animation-fill-mode: forwards;
+}
+header .openMenu .imgSection .img_box img {
+  /* max-width: 100%; */
+  filter: url(#filter1);
+}
+header .openMenu .imgSection img {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+  transform: scale(1.01);
+}
+header .openMenu .list {
+  width: 45%;
+}
+header .openMenu .list ul {
+  direction: rtl;
+}
+header .openMenu .list ul li {
+  text-align: right;
+  width: fit-content;
+  height: fit-content;
+  transition: 0.3s;
+}
+header .openMenu .list ul li img {
+  display: none;
+}
+header .openMenu .list ul li a {
+  z-index: 5;
+  position: relative;
+  text-decoration: none;
+  font-family: "Helvetica Now Text";
+  font-weight: 500;
+  font-size: 50px;
+  white-space: nowrap;
+  line-height: 73.5px;
+  color: black;
+}
+header .openMenu .list .blur {
+  filter: blur(4px);
+  opacity: 0.4;
+  visibility: inherit;
+  transition: 0.3s;
+}
+header .open {
+  transform: translateX(0);
+  transition: 0.5s ease-in-out;
+}
+header .openBars span:nth-child(2) {
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+header .openBars span:nth-child(1) {
+  transform: rotate(45deg) translate(10px, 10px);
+  transition: 0.3s ease-in-out;
+}
+header .openBars span:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -8px);
+  transition: 0.3s ease-in-out;
+}
+
+.Menu {
+  top: 0;
+  transform: translateX(100%);
+  transition: 0.5s ease-in-out;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+.Menu .overlay {
+  width: 100%;
+  height: 100%;
+  /* From https://css.glass */
+  background: rgba(104, 104, 104, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(104, 104, 104, 0.3);
+}
+
+.activeHeader {
+  background-color: white;
+  transition: 0.4s ease-in-out;
+}
+.activeHeader .bars span {
+  background-color: #424242;
+}
+
+.goDown {
+  transition: 0.4s;
+  transform: translateY(-100%);
+}
+
+.goTop {
+  transition: 0.4s;
+  transform: translateY(0);
+}
+
+@media only screen and (max-width: 1300px) {
+  .aboutUs .section2 .rightCol h2 {
+    margin-bottom: 15px;
+  }
+  .aboutUs .section2 .rightCol p {
+    font-size: 16px;
+    line-height: 25.9px;
+    margin-bottom: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */
