@@ -284,7 +284,7 @@ export default function Home() {
       <div className="vid section8">
         <video playsInline autoPlay muted loop poster="">
           <source
-            src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4"
+            src="/images/projectVideo.mp4"
             id="sample"
             type="video/mp4"
           />

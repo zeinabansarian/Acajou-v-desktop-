@@ -8,7 +8,7 @@ export default function Footer() {
 
                 <div className="logo">
                     <Link to="/">
-                        <img src="images/ANSON_logo_ 3.png" alt="logo" title="logo" />
+                        <img src="/images/ANSON_logo_ 3.png" alt="logo" title="logo" />
                     </Link>
                 </div>
                 <div className="footerItem">
@@ -51,7 +51,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="copyRight">
-                <img src="images/namasite.png" alt="namasite" title="namasite" />
+                <img src="/images/namasite.png" alt="namasite" title="namasite" />
                 <a href="namasite.ir">
 
                     <p>طراحی سایت و بهینه سازی سایت</p>

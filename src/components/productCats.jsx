@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import productsData from "../producrsData";
 
 const ProductsCats = () => {
   const [activeImgIndex, setActiveImgIndex] = useState(0);
@@ -18,9 +20,9 @@ const ProductsCats = () => {
       element.classList.remove("activeImg")
     });
   }
-  useEffect(()=>{
+  useEffect(() => {
     backImg.current[0].classList.add("activeImg")
-},[backImg])
+  }, [backImg])
   const handleMouseEnter = (index) => {
     removeActiveImg()
     setActiveImgIndex(index);
@@ -42,70 +44,71 @@ const ProductsCats = () => {
   };
 
   const circleElement = circleRef.current;
-  
-  useEffect(()=>{
+
+  useEffect(() => {
 
     const productList = productListRef.current;
-  productList.addEventListener("mousemove", handleMouseMove);
-  productList.addEventListener("mouseout", handleMouseOut);
-  },[productListRef])
+    productList.addEventListener("mousemove", handleMouseMove);
+    productList.addEventListener("mouseout", handleMouseOut);
+  }, [productListRef])
 
 
   const speed = 0.15;
-useEffect(()=>{
+  useEffect(() => {
 
-  const tick = () => {
-    setCircle((prevCircle) => {
-      if (prevCircle) {
-        
-        const newX = prevCircle.x + (mouse.x - prevCircle.x) * speed;
-        const newY = prevCircle.y + (mouse.y - prevCircle.y) * speed;
-        if (circleElement) {
-          circleElement.style.transform = `translate(${newX}px, ${newY}px)`;
+    const tick = () => {
+      setCircle((prevCircle) => {
+        if (prevCircle) {
+
+          const newX = prevCircle.x + (mouse.x - prevCircle.x) * speed;
+          const newY = prevCircle.y + (mouse.y - prevCircle.y) * speed;
+          if (circleElement) {
+            circleElement.style.transform = `translate(${newX}px, ${newY}px)`;
+          }
+          return { x: newX, y: newY };
         }
-        return { x: newX, y: newY };
-      }
-    });
-    window.requestAnimationFrame(tick);
-  };
+      });
+      window.requestAnimationFrame(tick);
+    };
 
-  tick();
-},[mouse])
+    tick();
+  }, [mouse])
 
 
   return (
     <div className="productsCats">
       <div className="circle" ref={circleRef}>
-        <img src="images/Vector.png" alt="cursor" />
+        <img src="/images/Vector.png" alt="cursor" />
       </div>
       <div className="productList" ref={productListRef}>
         <div className="backgroundImg">
           <div className="backImg" ref={backImgRefs}>
-            <img src="images/ac22ad2198fb773587b310bf58267978.png"
+            <img src="/images/ac22ad2198fb773587b310bf58267978.png"
               alt="@title"
               title="@title" />
           </div>
           <div className="backImg" ref={backImgRefs}>
-            <img src="images/7fb45c7016a5b6db496ffb4fdbb14502 12.png"
+            <img src="/images/pict7867332000016432493000013399001.jfif"
               alt="@title"
               title="@title" />
           </div>
         </div>
         <div className="listcat">
-          <div className="listItem" onMouseEnter={() => handleMouseEnter(0)} >
-            <div className="title">
-              <h1>Wardrobe and closet</h1>
-              <span></span>
+          {
+            productsData.map(product => (
+              <div key={product.id} className="listItem" onMouseEnter={() => handleMouseEnter(0)} >
+                  <Link to={`/product/${product.id}`}>
+                  <div className="title">
+                    <h1>{product.title}</h1>
+                    <span></span>
 
-            </div>
-          </div>
-          <div className="listItem" onMouseEnter={() => handleMouseEnter(1)}>
-            <div className="title">
-              <h1>Kitchen system</h1>
-              <span></span>
+                  </div>
+              </Link>
+                </div>
 
-            </div>
-          </div>
+            ))
+          }
+        
         </div>
       </div>
     </div>

@@ -8,8 +8,8 @@ export default function Header({active}) {
   const [isScrolled, setIsScrolled] = useState(false);
   const lastScrollTop = useRef(0);
 
-  const whiteLogo = "/images/whiteLogoDesktop.svg";
-  const blackLogo = "/images/blackLogoDesktop.svg";
+  const whiteLogo = "//images/whiteLogoDesktop.svg";
+  const blackLogo = "//images/blackLogoDesktop.svg";
   const [logoSrc, setLogoSrc] = useState(whiteLogo);
 
   const lists = useRef([]);
@@ -112,7 +112,7 @@ export default function Header({active}) {
         <header className={`header ${isScrolled ? "activeHeader" : ""} ${scrollDirection === "down" ? "goDown" : "goTop"} ${active ? "activeHeader" : ""}` }>
             <div className="logo">
             <Link to="/">
-                    <img src="images/ANSON_logo_ 1.png" alt="logo" title="logo" />
+                    <img src="/images/ANSON_logo_ 1.png" alt="logo" title="logo" />
                 </Link>
             </div>
             <div className={`bars ${menuOpen ? "openBars" : ""}`} onClick={handleMenuToggle}>
@@ -140,17 +140,17 @@ export default function Header({active}) {
                         <ul>
                             <li ref={listsRefs}><Link to="/">HOME</Link>
 
-                                <img ref={imagesRefs} src="images/Rectangle 10.jpg" alt="" />
+                                <img ref={imagesRefs} src="/images/Rectangle 10.jpg" alt="" />
                             </li>
                             <li ref={listsRefs}><Link to="/productCat">PRODOUT</Link>
-                                <img ref={imagesRefs} src="images/Rectangle 1.jpg" alt="" />
+                                <img ref={imagesRefs} src="/images/Rectangle 1.jpg" alt="" />
                             </li>
                             <li ref={listsRefs}><Link to="/projectList">PROJECT</Link>
-                                <img ref={imagesRefs} src="images/Rectangle 16.jpg" alt="" />
+                                <img ref={imagesRefs} src="/images/Rectangle 16.jpg" alt="" />
                             </li>
                             <li ref={listsRefs}><Link to="/aboutUs">ABOUT US</Link></li>
                             <li ref={listsRefs}><Link to="/contactUs">CONTACT</Link>
-                                <img ref={imagesRefs} src="images/Rectangle 10.jpg" alt="" />
+                                <img ref={imagesRefs} src="/images/Rectangle 10.jpg" alt="" />
                             </li>
                         </ul>
                     </div>

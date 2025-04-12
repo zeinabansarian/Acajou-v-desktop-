@@ -361,6 +361,7 @@ p {
   align-items: center;
   justify-content: center;
   transition: 0.5s;
+  transform: scale(0);
 }
 
 .leftScroll {
@@ -444,7 +445,8 @@ p {
 .productList .listcat .listItem .title {
   width: 100%;
 }
-.productList .listcat .listItem h1, .productList .listcat .listItem h3 {
+.productList .listcat .listItem h1,
+.productList .listcat .listItem h3 {
   font-family: "Helvetica Now Text";
   font-weight: 400;
   font-size: 32px;
@@ -635,7 +637,8 @@ footer .footerContainer .footerItem ul li h6 {
   line-height: 23.87px;
   color: #424242;
 }
-footer .footerContainer .footerItem ul li p, footer .footerContainer .footerItem ul li span {
+footer .footerContainer .footerItem ul li p,
+footer .footerContainer .footerItem ul li span {
   font-family: "Helvetica Now Display";
   font-weight: 400;
   font-size: 14px;
@@ -999,6 +1002,7 @@ footer .copyRight a {
 .productShow1 .section5 {
   position: relative;
   margin-bottom: 162px;
+  overflow: hidden;
 }
 .productShow1 .section5 .swiper-slide img {
   width: 100%;
@@ -1019,11 +1023,9 @@ footer .copyRight a {
 }
 .productShow1 .section5 .btns .nextBtn {
   right: 0;
-  transform: translateX(100%);
 }
 .productShow1 .section5 .btns .prevBtn {
   left: 0;
-  transform: translateX(-100%);
 }
 .productShow1 .section5 .btns .prevBtn.swiper-button-disabled {
   transform: translateX(-100%) !important;
@@ -1041,13 +1043,16 @@ footer .copyRight a {
 .productShow1 .section5 .proSlider:hover .prevBtn {
   transform: translateX(0);
 }
+.productShow1 .section5 .proSliderContainer {
+  overflow: hidden;
+}
 .productShow1 .section5 .swiper-pagination {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   column-gap: 30px;
   flex-wrap: wrap;
-  bottom: -65px;
+  margin-top: 65px;
   row-gap: 20px;
   padding: 0 20px;
   left: 0;
@@ -1160,13 +1165,11 @@ footer .copyRight a {
   line-height: 61.74px;
   padding: 80px 0 34px 3.188vw;
 }
-.projectShow2 .section3 .sliderSection .sliderProject2 .swiper-slide img {
-  width: -webkit-fill-available;
-  width: -moz-available;
-  width: fill-available;
+.projectShow2 .section3 .sliderSection .swiper-slide img {
+  width: 100%;
 }
-.projectShow2 .section3 .sliderSection .sliderProject2 .btns .nextBtn,
-.projectShow2 .section3 .sliderSection .sliderProject2 .btns .prevBtn {
+.projectShow2 .section3 .sliderSection .btns .nextBtn,
+.projectShow2 .section3 .sliderSection .btns .prevBtn {
   position: absolute;
   padding: 24px 30px;
   background-color: rgba(1, 1, 1, 0.3019607843);
@@ -1179,17 +1182,17 @@ footer .copyRight a {
   opacity: 1;
   transition: 0.5s;
 }
-.projectShow2 .section3 .sliderSection .sliderProject2 .btns .nextBtn {
+.projectShow2 .section3 .sliderSection .btns .nextBtn {
   right: 0;
 }
-.projectShow2 .section3 .sliderSection .sliderProject2 .btns .prevBtn {
+.projectShow2 .section3 .sliderSection .btns .prevBtn {
   left: 0;
 }
-.projectShow2 .section3 .sliderSection .sliderProject2 .btns .prevBtn.swiper-button-disabled {
+.projectShow2 .section3 .sliderSection .btns .prevBtn.swiper-button-disabled {
   opacity: 0;
   transition: 0.5s;
 }
-.projectShow2 .section3 .sliderSection .sliderProject2 .btns .nextBtn.swiper-button-disabled {
+.projectShow2 .section3 .sliderSection .btns .nextBtn.swiper-button-disabled {
   opacity: 0;
   transition: 0.5s;
 }
